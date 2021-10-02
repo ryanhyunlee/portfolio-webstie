@@ -1,0 +1,180 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: "Lato", sans-serif;
+}
+
+html a {
+  overflow: hidden;
+  text-decoration: none;
+  color: #000;
+}
+
+/* Navbar Styles */
+.navbar {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 10vh;
+  width: 100vw;
+  border-bottom: 1px solid #eee;
+  border-width: 70%;
+}
+
+.navbar .logo {
+  font-size: 2.5rem;
+  font-family: "Ephesis", cursive;
+}
+
+.list-items {
+  display: flex;
+}
+
+.list-items .list-item {
+  display: flex;
+}
+
+.list-items .list-item a {
+  margin: 0 1.2rem;
+  padding: 1rem;
+}
+
+/* Main section */
+.main {
+  height: 85vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.main .left {
+  display: flex;
+  align-items: center;
+  margin: auto 0;
+  height: 100%;
+  width: 50%;
+}
+
+.main .left img {
+  max-height: 100%;
+  width: 90%;
+}
+
+.main .right {
+  width: 50%;
+  margin: 0 3rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.main .right h2 {
+  margin: 0 auto;
+  margin-bottom: 2rem;
+  font-family: "Great Vibes", cursive;
+  font-size: 50px;
+}
+
+.main .right p {
+  font-size: 20px;
+  line-height: 2;
+  margin-bottom: 4.2rem;
+}
+
+.main .right .btn {
+  font-size: 18px;
+  width: 40%;
+  margin: 0 auto;
+  padding: 1.5rem;
+  background: #fff;
+  border: 1px solid black;
+  border-radius: 50px;
+}
+
+.btn:hover {
+  cursor: pointer;
+}
+
+.footer {
+  margin-top: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer p {
+  font-size: 12px;
+}
+
+/* Media Queries */
+
+/* Tablets and small screens */
+@media screen and (max-width: 1188px) {
+  .main .top {
+    margin-top: 2rem;
+  }
+
+  .main .right h2 {
+    font-size: 40px;
+  }
+
+  .main .right p {
+    font-size: 16px;
+  }
+
+  .main .right .btn {
+    font-size: 14px;
+  }
+}
+
+/* Smartphones */
+@media screen and (max-width: 900px) {
+  html {
+    overflow-x: hidden;
+    overflow-y: auto;
+  }
+
+  .logo a {
+    font-size: 30px;
+  }
+
+  .list-items .list-item a {
+    margin: 0;
+    font-size: 12px;
+  }
+
+  .main {
+    height: 100%;
+    flex-direction: column;
+  }
+
+  .main .top {
+    max-width: 90%;
+  }
+
+  .main .top img {
+    max-height: 70%;
+    border-radius: 100px;
+  }
+
+  .main .bottom {
+    margin: 2rem 4rem;
+  }
+
+  .main .bottom .btn {
+    min-width: 80%;
+  }
+
+  .main .bottom .btn a {
+    font-size: 12px;
+  }
+
+  .footer {
+    margin-bottom: 2rem;
+  }
+}
