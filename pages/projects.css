@@ -63,6 +63,7 @@ html a {
 .portfolios .portfolio .project-image {
   max-width: 100%;
   border-radius: 10px;
+  height: 300px;
 }
 
 .portfolios .portfolio h2 {
@@ -94,6 +95,10 @@ html a {
   .portfolios .portfolio p {
     font-size: 14px;
   }
+
+  .portfolios .portfolio .project-image {
+    height: 200px;
+  }
 }
 
 @media screen and (max-width: 900px) {
@@ -120,6 +125,10 @@ html a {
   .portfolios .portfolio {
     width: 70%;
     margin: 2rem 0;
+  }
+
+  .portfolios .portfolio .project-image {
+    height: 100%;
   }
 
   .footer {
